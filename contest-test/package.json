@@ -1,0 +1,21 @@
+{
+  "name": "contest",
+  "version": "1.0.0",
+  "description": "Contest Platform Backend Assignment",
+  "main": "index.js",
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:ui": "vitest --ui"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "vitest": "^4.0.17"
+  }
+}
