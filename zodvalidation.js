@@ -4,7 +4,7 @@ export const signupZodSchema = z.object({
   name: z.string(),
   email: z.email(),
   password: z.string(),
-  role: z.string(),
+  role: z.enum(["creator", "contestee"]).optional(),
 });
 
 export const loginZodSchmea = z.object({
@@ -17,4 +17,11 @@ export const contestZodScehma = z.object({
   description: z.string(),
   startTime: z.string(),
   endTime: z.string(),
+});
+
+export const mcqSchema = z.object({
+  questionText: z.string(),
+  options: z.array(z.string()).min(1),
+  correctOptionIndex: z.number(),
+  points: z.number(),
 });

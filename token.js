@@ -6,7 +6,7 @@ export const validateToken = function (req, res, next) {
     return res.status(401).json({
       success: false,
       data: null,
-      error: "INVALID_REQUEST",
+      error: "UNAUTHORIZED",
     });
   }
   const token = authHeader.split(" ")[1];
